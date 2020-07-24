@@ -4,17 +4,7 @@ const Description = () => {
     return (
         <div>
             <p>This is a React Component using AG-Grid to make an interactive pivot table.</p>
-          You can 
-          <ul>
-                <li>Select multiple rows</li>
-                <li>Group/Ungroup the list of cars</li>
-                <li>Sort or Filter the grid when you hover over the column names the filter appears
-                </li>
-                <li>Right Click to export to .csv, .xml, or .xlsx.</li>
-                <li>Save selections you've checked off and save them to a database.
-                    Click a few boxes and then click "Get Selected Rows"
-                </li>
-          </ul>
+
           Try this
             <ol>
                 <li>Click the <span style={{ border: '1px solid lightGrey', padding: '0px 3px 0px 3px'}}>›</span> button to the left of Ford.</li>

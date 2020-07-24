@@ -9,11 +9,10 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      columnDefs: [{
-        headerName: "Make", field: "make", rowGroup: true
-      }, {
-        headerName: "Price", field: "price"
-      }],
+      columnDefs: [
+        { headerName: "Make", field: "make", sortable: true, rowGroup: true}, 
+        {headerName: "Price", field: "price"}
+    ],
       rowData: null,
       autoGroupColumnDef: {
         headerName: "Model",

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.scss';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-enterprise';
+import Description from './Components/Description.component';
 
 
 class App extends Component {
@@ -50,13 +51,7 @@ class App extends Component {
           autoGroupColumnDef={this.state.autoGroupColumnDef}
           rowData={this.state.rowData}>
         </AgGridReact>
-        <div>
-          <p>This is a React Component using AG-Grid to make an interactive pivot table.</p>
-          You can select multiple rows. Group/Ungroup the list of cars. 
-          <p>Sort or Filter the grid will display a small column menu icon when you hover the header.
-          Pressing it will display a popup with a filtering UI which lets you choose the kind of filter and the text that you want to filter by.</p>
-          Right Clicking brings the options to export to .csv, .xml, or .xlsx.
-        </div>
+        <Description />
       </div>
     );
   }
